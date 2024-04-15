@@ -2,7 +2,7 @@
 
 /** Media Queries **/
 @mixin telefono {
-    @media (min-width: v.$telefono) {
+    @media (min-width: v.$mobile) {
         @content;
     }
 }
@@ -20,10 +20,10 @@
 }
 
 
-@mixin boton($bgColor, $colorTexto) {
+@mixin boton($bgColor, $textColor) {
     background-color: $bgColor;
     padding: 2rem 4rem;
-    color: $colorTexto;
+    color: $textColor;
     margin-top: 1rem;
     border-radius: 3rem;
     font-size: 2rem;
@@ -35,8 +35,8 @@
     }
 }
 
-@mixin grid($columnas, $espaciado ) {
+@mixin grid($cols, $spacing ) {
     display: grid;
-    gap: $espaciado;
-    grid-template-columns: repeat($columnas, 1fr);
+    gap: $spacing;
+    grid-template-columns: repeat($cols, 1fr);
 }
