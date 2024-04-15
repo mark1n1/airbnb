@@ -12,7 +12,52 @@
 </head>
 <body>
     <header class="header">
-        <div class="bar container">Headers</div>
+        <div class="bar container">
+            <div class="bar__logo">
+                <p class="bar__name">Travel</p>
+            </div>
+
+            <nav class="bar__navigation">
+                <a href="#">Places to stay</a>
+                <a href="#">Experiences</a>
+                <a href="#">Experiences online</a>
+            </nav>
+
+            <nav class="bar__login">
+                <a href="#">Become a host</a>
+            </nav>
+        </div>
+
+        <form class="form container">
+            <div class="form__field">
+                <label for="location" class="form__label">Location</label>
+                <input type="text" class="form__input" id="location" placeholder="Where are you going?">
+            </div>
+
+            <div class="form__field">
+                <label for="checkin" class="form__label">Check in</label>
+                <input type="date" class="form__input" id="checkin">
+            </div>
+
+            <div class="form__field">
+                <label for="checkout" class="form__label">Check out</label>
+                <input type="date" class="form__input" id="checkout">
+            </div>
+
+            <div class="form__field">
+                <label for="who" class="form__label">Who</label>
+                <input type="number" class="form__input" id="who" placeholder="How many?">
+            </div>
+
+            <div class="form__field">
+                <input type="submit" class="form__input" value="Search">
+            </div>
+        </form>
     </header>
+
+    <div class="header__search container">
+        <p class="header__search-label">Don't know where to go?</p>
+        <a href="#" class="header__search-button">Flex Search</a>
+    </div>
 </body>
 </html>
