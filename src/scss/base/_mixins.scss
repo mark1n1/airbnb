@@ -20,7 +20,7 @@
 }
 
 
-@mixin boton($bgColor, $textColor) {
+@mixin button($bgColor, $textColor) {
     background-color: $bgColor;
     padding: 2rem 4rem;
     color: $textColor;
